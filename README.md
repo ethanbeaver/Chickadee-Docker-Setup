@@ -29,6 +29,16 @@ To run without rebuilding the image, run without the -b flag.
 ./docker-build.sh
 ```
 
+### Running
+
+To enter the container, run the command:
+
+```
+docker exec -it chickadee_container "/bin/bash"
+```
+
+Just type `exit` to exit the container.
+
 ## Built With
 
 * [Docker](https://docs.docker.com/) - The software for the Container infrastructure
