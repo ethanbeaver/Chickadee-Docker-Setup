@@ -17,18 +17,20 @@ An internet Connection
 
 ### Installing
 
-All you need to do to run this project is to run the docker build SH script
+All you need to do to run this project is to run the docker build SH script.
+
+The `-b` flag rebuilds the image. This needs done only when the dockerfile is changed.
 
 ```
 ./docker-build.sh -b
 ```
 
-To run without rebuilding the image, run without the -b flag.
+To remove the current container and run a new one, run with the -r flag
+WARNING: This will delete your current instance of the container. You will lose all changes you've made to the container.
 
 ```
-./docker-build.sh
+./docker-build.sh -b
 ```
-
 ### Running
 
 To enter the container, run the command:
