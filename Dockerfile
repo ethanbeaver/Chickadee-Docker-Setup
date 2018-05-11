@@ -1,5 +1,5 @@
 # Start with a Python image.
-FROM ubuntu:bionic
+FROM ubuntu:latest
 
 # Install some necessary things.
 RUN apt-get update
