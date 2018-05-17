@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 # Install some necessary things.
 RUN apt-get update
-RUN apt-get install -y git make vim build-essential net-tools openssh-server qemu gcc-7 g++-7
+RUN apt-get install -y git make vim build-essential net-tools openssh-server qemu gcc-7 g++-7 gdb
 
 # Copy all our files into the image.
 RUN mkdir /chickadee
